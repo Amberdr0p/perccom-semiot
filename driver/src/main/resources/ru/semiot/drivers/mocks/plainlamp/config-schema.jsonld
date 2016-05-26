@@ -1,0 +1,25 @@
+{
+  "@context": {
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "dtype": "http://www.linkedmodel.org/schema/dtype#",
+    "semiot": "http://w3id.org/semiot/ontologies/semiot#"
+  },
+  "@type": "semiot:DriverConfigurationSchema",
+  "semiot:driverPid": "ru.semiot.drivers.mocks.plainlamp",
+  "semiot:view": [
+    {
+      "@type": "semiot:CommonSchema",
+      "ru.semiot.drivers.mocks.plainlamp.groups.number": {
+        "@type": "xsd:string",
+        "rdfs:label": "Group number",
+        "dtype:defaultValue": 1
+      },
+      "ru.semiot.drivers.mocks.plainlamp.coap.uri": {
+        "@type": "xsd:string",
+        "rdfs:label": "Coap URI",
+        "dtype:defaultValue": "coap://192.168.32.66:5683/light"
+      }
+    }
+  ]
+}
