@@ -1,0 +1,7 @@
+@prefix semiot: <http://w3id.org/semiot/ontologies/semiot#> .
+@prefix dul: <http://www.loa-cnr.it/ontologies/DUL.owl#> .
+
+[ a semiot:Command, semiot:SwitchProcessCommand ;
+    semiot:targetOperation <https://raw.githubusercontent.com/semiotproject/semiot-platform/master/device-proxy-service-drivers/mock-plain-lamp/src/main/resources/ru/semiot/drivers/mocks/plainlamp/prototype.ttl#PlainLamp-Shine> ;
+    dul:involvesAgent <http://192.168.173.198/systems/perccom1> ;
+] .
